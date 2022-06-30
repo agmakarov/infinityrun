@@ -4,6 +4,10 @@ var clicks = 0;
 var text = document.getElementById("text");
 
 var result = prompt ("Введите уровень сложности от 1 до 4");
+if (result < 1 || result > 4){
+    alert("Введи значение 1-4");
+    window.location.reload();
+}
 switch(result){
     case "1":
         block.classList.add("animation3s");
